@@ -17,13 +17,17 @@ const Modal = _ref => {
     hide
   } = _ref;
   return /*#__PURE__*/_react.default.createElement("div", {
+    className: "modal-overlay"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "modal-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal"
   }, /*#__PURE__*/_react.default.createElement("span", {
     className: "text"
   }, contentModal), /*#__PURE__*/_react.default.createElement("span", {
     className: "close-modal",
     onClick: hide
-  }, "X"));
+  }, "X"))));
 };
 
 var _default = Modal;
