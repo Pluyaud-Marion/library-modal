@@ -13,14 +13,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const Modal = _ref => {
   let {
-    contentModal
+    contentModal,
+    toogle
   } = _ref;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "modal"
   }, /*#__PURE__*/_react.default.createElement("span", {
     className: "text"
   }, contentModal), /*#__PURE__*/_react.default.createElement("span", {
-    className: "close-modal"
+    className: "close-modal",
+    onClick: toogle
   }, "X"));
 };
 
