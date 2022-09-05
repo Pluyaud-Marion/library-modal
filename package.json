@@ -1,10 +1,10 @@
 {
   "name": "library-modal",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "author": "Marion Pluyaud",
   "private": false,
   "description": "modal for react project",
-  "keyword": [
+  "keywords": [
     "react",
     "component",
     "modal"
