@@ -11,7 +11,7 @@ On your terminal :
 # Use library-modal
 - You must import package : `import { Modal } from 'library-modal'`
 - How insert modal component at rendering (is an example) :
-```
+```js
 import { Modal } from 'library-modal'
 
 const Form = () => {
