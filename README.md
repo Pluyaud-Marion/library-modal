@@ -11,7 +11,7 @@ On your terminal :
 # Use library-modal
 - You must import package : `import { Modal } from 'library-modal'`
 - How insert modal component at rendering (is an example) :
-```
+```js
 import { Modal } from 'library-modal'
 
 const Form = () => {
@@ -54,7 +54,4 @@ You have to pass props `contentModal` and `hide` to component
 # Props
 - `contentModal` : text to display on modal
 - `hide` : function called onClick update setShow on false
-
-# Demo 
-![demo-modal.png](demo)
 
