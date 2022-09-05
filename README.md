@@ -55,6 +55,3 @@ You have to pass props `contentModal` and `hide` to component
 - `contentModal` : text to display on modal
 - `hide` : function called onClick update setShow on false
 
-# Demo 
-![demo-modal.png](demo)
-
