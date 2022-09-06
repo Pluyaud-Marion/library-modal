@@ -21,7 +21,7 @@ const Form = () => {
   const [createOk, setCreateOk] = useState(false)
 
   const submitCreateEmployee = (e) => {
-    if (firstname) {
+    if (!firstname) {
       setCreateOk(false)
       setShow(true)
     } else {
