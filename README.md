@@ -18,14 +18,14 @@ const Form = () => {
 
   const [firstname, setFirstname] = useState("")
   const [show, setShow] = useState(false)
-  const [createOk, setCreateOk] = useState(false)
+  const [created, setCreated] = useState(false)
 
   const submitCreateEmployee = (e) => {
     if (!firstname) {
-      setCreateOk(false)
+      setCreated(false)
       setShow(true)
     } else {
-      setCreateOk(true)
+      setCreated(true)
       setShow(true)
     }
   };
@@ -41,8 +41,8 @@ const Form = () => {
         <input onChange={(e) => setFirstname(e.target.value)} type="text" id="firstName" required />
       </form>
       <button onClick={submitCreateEmployee} className='button-save'>Save</button>
-      {show && !createOk && <Modal contentModal="You must complete all the fields!" hide={hide} />}
-      {show && createOk && <Modal contentModal="Employee Created!" hide={hide} />}
+      {show && !created && <Modal contentModal="You must complete all the fields!" hide={hide} />}
+      {show && created && <Modal contentModal="Employee Created!" hide={hide} />}
     </div>
   )
 };
